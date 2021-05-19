@@ -1,3 +1,4 @@
+'ues strict'
 // 1. String concatenation
 console.log('my' + 'cat'); // mycat
 console.log('1' + 2); // 12
