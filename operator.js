@@ -71,7 +71,7 @@ function check() {
 } 
 
 // often used to compress long if-statement
-// nullableObject && nullableObject.something
+// nullableObject && nullableObject.something // null 오브젝트가 null이 아닐때만 someting 받아오게 됨
 // if ( nullableObject != null ) { 
 //     nullableObject.something; // 간편한 null 체크 예
 // }
@@ -121,22 +121,23 @@ if ( name === 'Hyun' ) {
 // 9. Ternary operator : ?
 // condition ? value1 : value2;
 console.log( name === 'Hyun' ? 'yes' : 'no'); // yes
+                        // ? true면 yse 실행, flase면 no 실행
 
 // 10. Switch statement
 // use for multiple if checks
 // use for eunm-like value check
 // use for multiple type checks in TS
 const browser = 'IE';
-switch (browser) {
+switch (browser) { // else if 반복된다면 switch 사용이 좋다
     case 'IE':
         console.log('go away!');
         break;
     case 'Chrome':
+    case 'Firefox': // case 붙여 놓으면 자동적으로 값 출력
         console.log('love you!');
         break;
-    case 'Firefox':
-        console.log('love you!');
-        break;
+        // console.log('love you!'); // 출력되는 결과값이 같을 때!
+        // break;
     default:
         console.log('same all!');
         break;

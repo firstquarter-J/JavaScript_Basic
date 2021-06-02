@@ -4,7 +4,7 @@ class Counter {
         this.callback = runEveryFIveTimes;
     }
 
-    increse(runIf5times) {
+    increse() {
         this.counter++;
         console.log(this.counter);
         if(this.counter % 5 === 0) {

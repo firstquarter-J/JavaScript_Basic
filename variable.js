@@ -1,5 +1,7 @@
 // 1. Use strict
-// added in ES 5
+// JavaScript is very flexible
+// flexible === dangerous
+// added in ECNAScript 5
 // use this for Valina Javascript.
 'use strict'; // 상식적인 코딩 가능하게 해 준다
 
@@ -7,6 +9,7 @@
 // let (added in ES6) // mutable data type
 
 let globalName = 'global name'; // 블럭 밖에서 사용한 변수는 자유롭게 사용 가능, 앱이 끝날 때 까지 메모리에 할당되기 때문에 최소한으로 사용!
+
 { // 블록 설정시 블록 안의 내용들은 블록 내에서만 사용 가능
 let name = 'Hyun'; // 앱 실행 시 메모리 할당, 유한한 공간
 console.log(name); // Hyun
@@ -25,9 +28,9 @@ var age;
 // var has no block scope // 블럭조차 무시하고 뒤죽박죽이 될 수 있다
 
 // 3. Constant, r(read only) // 메모리에 선언 된 후 변경 불가 ( 읽기만 가능! ) // immutable data type
-// Immutable data types : premitive types, frozen objects (i.e object.freeze())
+// Immutable data types : primitive types, frozen objects (i.e object.freeze())
 // Mutable data types : all objects by default are mutable in JS
-// favor immutable data type always for a few reasons?
+// favor immutable data type always for a few reasons? 왜 항상 불변의 데이터 타입을 써야 하는가?
 // - security // 해커가 지 맘대로 변경할 수 없게!
 // - thread safety // 다중 스레드가 변수에 동시접근시 위험할 수 있다. 값이 변경되지 않도록 변수를 선언하면 안심
 // - reduce human mistakes // 인간은 어리석고 같은 실수를 반복하지...
@@ -74,11 +77,11 @@ const test = 3 < 1;
 console.log(`value : ${canRead}, type : ${typeof canRead}`); // value : true, type : boolean
 console.log(`value : ${test}, type : ${typeof test}`); // value : false, type : boolean
 
-// null // 아무 값도 없다고 지정!
+// null // 명확하게 아무 값도 없다고 지정!
 let noting = null; 
 // console.log(`value : ${nothing}, type : ${typeof nothing}`); // type : object
 
-// undefined // 아무 값도 없을때, 또는 없다고 지정!
+// undefined // 선언은 되었지만 아무 값도 없을때, 또는 없다고 지정!
 let x;
 console.log(`value : ${x}, type : ${typeof x}`); // value : undefined, type : undefined
 

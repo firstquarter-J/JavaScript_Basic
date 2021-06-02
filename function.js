@@ -5,11 +5,12 @@
 // - performs a task or calculates a value
 
 // 1. Function decalraon
-// function name(parameter1, parameter2) { body .. return; }
+// function name(parameter1, parameter2) { body... return; }
 // one function === one thing
 // naming : doSomething, command, verb // 동사형으로 이름 지정!
 // e.g. createCardAndPoint -> createCard, createPoint
-// function is object in JS
+// e.g. ? example given
+// function is object in JS // JS에서 함수는 오브젝트다!
 
 function printHello() {
     console.log('Hello');
@@ -155,7 +156,7 @@ const add = (a, b) => a + b; // 변신!
 // IIFE : Immediately Invoked Function Expression // 선언함과 동시에 호출!
 (function hello() {
     console.log('IIFE');
-})();
+})(); // 이런 방법도 있다
 
 // Fun quiz time~~!
 // function calculate(command, a, b)

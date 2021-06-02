@@ -59,7 +59,7 @@ const students = [
     });
 }
 {
-    const result = students.find(function(student) {
+    const result = students.find(function(student) { // find ? 불리언 타입 true가 나오면 리턴!
         return student.score === 90; // 조건이 맞으면 리턴!
     });
     console.log(result); // Student {name: "C", age: 30, enrolled: true, score: 90}
@@ -100,7 +100,7 @@ const students = [
         console.log(curr);
         return prev + curr.score; // 현재값이 리턴되며 이전값으로, 반복하며 새로운 현재값이 대입되어 합을 구한다!
     }, 0); // 주어진 이니셜 값부터 시작
-    console.log(result);
+    console.log(result); // 369
 }
 {
     const result = students.reduce((prev, curr) => prev + curr.score, 0);

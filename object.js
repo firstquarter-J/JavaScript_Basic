@@ -35,9 +35,9 @@ console.log(Hyun.hasJob); // true
 // .name ? 코딩하는 순간 그 키 값을 받아오고 싶을 때 사용
 // ['name'] ? Computed properties : 정확하게 어떤 키가 필요할 지 모를 때(런타임에서 결정될 때) 이 방식을 사용 // 실시간!
 
-function printValue(obj, key) {
+function printValue(obj, key) { 
     // console.log(obj.key); // undefined
-    console.log(obj[key]); 
+    console.log(obj[key]); // e.g. 사용자에게 실시간으로 정보를 입력받아 사용할 때 이런 식으로!
 }
 printValue(Hyun, 'name'); // Hyun
 printValue(Hyun, 'age') // 34
@@ -60,8 +60,8 @@ function makePerson(name, age) { // 다른 계산 없이 순수하게 오브젝�
 // 4. Constructor Function
 const person5 = new Person('Hee', 5);
 console.log(person5); // Person {name: "Hee", age: 5}
-
-function Person(name, age) { // 대문자로 시작하는 함수 생성! JS가 알아서 오브젝트 생성
+                            // 다른 계산 없이 순수하게 오브젝트 생성하는 함수들은
+function Person(name, age) { // 대문자로 시작하도록 함수 생성! JS가 알아서 오브젝트 생성
     // this = {}; // 생략 가능!
     this.name = name;
     this.age = age;

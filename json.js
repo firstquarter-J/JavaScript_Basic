@@ -41,7 +41,7 @@ console.log(obj); // {name: "tori", color: "white", size: null, birthDate: "2021
 rabbit.jump(); //  can jump!
 // obj.jump() // error! JSON 변환시 함수는 포함되지 않는다! 하여 jump 함수 작동 안됨!
 
-console.log(rabbit.birthDate.getDate()); // 20 ? 날자!
+console.log(rabbit.birthDate.getDate()); // 20 ? 날짜!
 // console.log(obj.birthDate.getDate()); // error! // JSOM으로 변환한 obj의 birthDate는 string이기때문!
 
 const obj1 = JSON.parse(json, (key, value) => {
